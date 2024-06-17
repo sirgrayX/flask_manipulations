@@ -4,8 +4,10 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-def main_page():
-    return "hello world"
+def main_page(environ, start_response):
+    return ["hello world".encode('utf-8')]
+
+
 
 # обработка ошибок
 @app.errorhandler(404)
