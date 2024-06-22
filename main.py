@@ -16,7 +16,7 @@ def main_page(environ, start_response):
 # здесь будет памятка
 @app.route("/memo")
 def get_memo():
-    
+    print("Какого хуя не работает")
     return [render_template('memo.html').encode('utf-8')]
 
 # здесь должна быть обработка опросника
