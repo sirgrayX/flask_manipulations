@@ -6,7 +6,12 @@ app.app_context().push()
 
 @app.route("/")
 def main_page(environ, start_response):
-    return render_template('main.html')
+    status = '200 OK'
+    response_headers = [
+        ('Content-type', 'text/html; charset=utf-8'),
+    ]
+    start_response(status, response_headers)
+    return [render_template('main.html').encode('utf-8')]
 
 # здесь будет памятка
 @app.route("/memo")
