@@ -14,9 +14,10 @@ def main_page(environ, start_response):
     return [render_template('main.html').encode('utf-8')]
 
 # здесь будет памятка
-@app.route("/memo")
+@app.route("/memo/")
 def get_memo():
-    return render_template('memo.html')
+    
+    return [render_template('memo.html').encode('utf-8')]
 
 # здесь должна быть обработка опросника
 @app.route("/questionnaire")
