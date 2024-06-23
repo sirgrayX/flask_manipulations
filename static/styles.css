@@ -56,7 +56,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  
   /* дополнительные стили */
   h1, h2, h3 {
     color: var(--primary-color);
@@ -138,19 +137,6 @@
   .main-title{
     font-size: 70px;
   }
-  
-  
-  /* отзывчивый дизайн */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  
-    .layout-out {
-      padding: 10px;
-    }
-  }
-
 
 .quiz-container {
     background-color: #f6f6f6;
@@ -193,4 +179,29 @@
     display: none;
     margin-top: 20px;
     font-size: 1.2rem;
+}
+
+/* отзывчивый дизайн */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .layout-out {
+      padding: 10px;
+    }
+  }
+
+@media (max-width: 500px){
+    .main-title{
+        font-size: 25px;
+      }
+
+    .instruction ul li{
+        font-size: 10px;
+      }
+
+    .menu-container h1 {
+        font-size: 20px;
+    }
 }
