@@ -1,3 +1,121 @@
+/* Основные цвета */
+:root {
+    --primary-color: #007bff; /* Синий */
+    --secondary-color: #2196F3; /* Светло-синий */
+    --background-color: #f2f2f2; /* Серый фон */
+    --text-color: #333; /* Темно-серый текст */
+  }
+  
+  /* Общие стили */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Заголовок */
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Контейнер для навигации */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Навигационный элемент (wrapper) */
+  .wrapper {
+    /* Добавьте стили для навигации */
+  }
+  
+  /* Основной контент */
+  .containerMain {
+    padding: 20px 0;
+  }
+  
+  /* Разметка контента */
+  .layout-out {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Внутренний контент */
+  .layout-inner {
+    /* Добавьте стили для основного контента */
+  }
+  
+  /* Дополнительные стили */
+  h1, h2, h3 {
+    color: var(--primary-color);
+  }
+  
+  a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .instruction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  
+  /* Отзывчивый дизайн */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .layout-out {
+      padding: 10px;
+    }
+  }
+
+
+
+
 .quiz-container {
     background-color: #fff;
     padding: 30px;
@@ -8,12 +126,14 @@
 .question {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .options {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    text-align: center;
 }
 
 .option {
