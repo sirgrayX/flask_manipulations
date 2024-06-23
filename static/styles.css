@@ -57,7 +57,7 @@
   }
   
   
-  /* Дополнительные стили */
+  /* дополнительные стили */
   h1, h2, h3 {
     color: var(--primary-color);
   }
@@ -67,11 +67,14 @@
     text-decoration: none;
   }
   
-  a:hover {
-    text-decoration: underline;
+  header a:hover {
+    margin-bottom: 15px;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
   }
   
-  .button {
+  button {
     background-color: var(--primary-color);
     color: white;
     padding: 10px 20px;
@@ -80,7 +83,7 @@
     cursor: pointer;
   }
   
-  .button:hover {
+  button:hover {
     background-color: var(--secondary-color);
   }
   
@@ -92,6 +95,7 @@
 
   .instruction {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
@@ -107,7 +111,7 @@
   .instruction ul li{
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid hwb(0 80% 20%); /* Добавляем границу */
+    border: 1px solid hwb(0 80% 20%);
     border-radius: 5px;
     text-align: center;
     font-size: 30px;
@@ -117,7 +121,6 @@
     margin-bottom: 15px;
     padding: 20px;
     background-color:#ccc;
-   
   }
 
   .instruction ul li a{
@@ -125,10 +128,15 @@
   }
 
   .menu-container {
+    align-items: center;
     background-color: #f6f6f6;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-title{
+    font-size: 70px;
   }
   
   
@@ -149,6 +157,12 @@
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container button {
+    display: block;  /* Делаем кнопку блочным элементом */
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .question {
