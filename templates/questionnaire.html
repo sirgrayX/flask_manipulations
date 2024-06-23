@@ -1,5 +1,13 @@
 {% extends "base.html" %} {% block content %}
-  <p>
-    Вопросики
-  </p>
+<div class="quiz-container">
+  <h2 class="question"></h2>
+  <div class="options"></div>
+  <button id="next-btn" style="display: none;">Следующий вопрос</button>
+  <button id="finish-btn" style="display: none;">Завершить</button>
+  <div class="result" style="display: none;">
+    <div class="result-title"></div>
+    <div class="result-content"></div>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='quiz.js') }}"></script>
 {% endblock %}
