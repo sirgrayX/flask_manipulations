@@ -32,7 +32,7 @@
     text-decoration: none;
   }
   
-  /* Контейнер для навигации */
+  /* контейнер для навигации */
   .container {
     display: flex;
     justify-content: space-between;
@@ -41,17 +41,12 @@
     margin: 0 auto;
   }
   
-  /* Навигационный элемент (wrapper) */
-  .wrapper {
-    /* Добавьте стили для навигации */
-  }
-  
-  /* Основной контент */
+  /* основной контент */
   .containerMain {
     padding: 20px 0;
   }
   
-  /* Разметка контента */
+  /* разметка контента */
   .layout-out {
     max-width: 1200px;
     margin: 0 auto;
@@ -61,10 +56,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  /* Внутренний контент */
-  .layout-inner {
-    /* Добавьте стили для основного контента */
-  }
   
   /* Дополнительные стили */
   h1, h2, h3 {
@@ -92,6 +83,12 @@
   .button:hover {
     background-color: var(--secondary-color);
   }
+  
+  .layout-inner{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
 
   .instruction {
     display: flex;
@@ -100,9 +97,42 @@
     margin-bottom: 15px;
     font-size: 1rem;
   }
+
+  .instruction ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .instruction ul li{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid hwb(0 80% 20%); /* Добавляем границу */
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .instruction ul li:hover{
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color:#ccc;
+   
+  }
+
+  .instruction ul li a{
+    text-decoration: none;
+  }
+
+  .menu-container {
+    background-color: #f6f6f6;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
   
   
-  /* Отзывчивый дизайн */
+  /* отзывчивый дизайн */
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
@@ -114,10 +144,8 @@
   }
 
 
-
-
 .quiz-container {
-    background-color: #fff;
+    background-color: #f6f6f6;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -144,7 +172,7 @@
 }
 
 .option:hover {
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 
 .result {
